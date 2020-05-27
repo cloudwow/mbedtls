@@ -1,4 +1,7 @@
 cmake_minimum_required(VERSION 2.6)
+if(POLICY CMP0076)
+  cmake_policy(SET CMP0076 NEW)
+endif()
 if(TEST_CPP)
     project("mbed TLS" C CXX)
 else()
